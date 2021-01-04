@@ -1,0 +1,64 @@
+topic: ~simpled()
+language: enu
+
+u:([GO e:SimpleWeb/Start e:GO]) $SimpleWeb/Page0="Hello, what animal do you want me to store? " what animal do you want me to store? the parrot, the cat, or the turtle? $SimpleWeb/Page1=1
+
+    u1:([beer e:SimpleWeb/Button1]) $SimpleWeb/Page2="parrot" All right! or do you want me to put the parrot away? 
+
+
+	    u2:([Left box e:SimpleWeb/Button4]) $SimpleWeb/Page3="Left box" Perfect !I'll immediately put the  
+cat in the Left box 
+		u3:([yes e:SimpleWeb/Button7]) $GO=1
+                u3:([no e:SimpleWeb/Button8]) $SimpleWeb/Page4=""
+
+	    u2:([Center box e:SimpleWeb/Button5]) $SimpleWeb/Page3="Center box" Perfect !  I'll immediately put the 
+cat in the Center box 
+		u3:([yes e:SimpleWeb/Button7]) $GO=1
+                u3:([no e:SimpleWeb/Button8]) $SimpleWeb/Page4=""
+
+	    u2:([Right box e:SimpleWeb/Button6]) $SimpleWeb/Page3="Right box" Perfect !  I'll immediately put the 
+cat in the Right box 
+		u3:([yes e:SimpleWeb/Button7]) $GO=1
+                u3:([no e:SimpleWeb/Button8]) $SimpleWeb/Page4=""
+
+
+
+
+    u1:([parret e:SimpleWeb/Button2]) $SimpleWeb/Page2="cat" All right! or do you want me to put the cat away?
+	
+	    u2:([Left box e:SimpleWeb/Button4]) $SimpleWeb/Page3="Left box"  Perfect ! I'll immediately put the 
+cat in the Left box 
+		u3:([yes e:SimpleWeb/Button7]) $GO=1
+		u3:([no e:SimpleWeb/Button8]) $SimpleWeb/Page4=""
+
+	    u2:([Center box e:SimpleWeb/Button5]) $SimpleWeb/Page3="Center box" Perfect ! I'll immediately put the 
+cat in the Center box 
+	    	u3:([yes e:SimpleWeb/Button7]) $GO=1
+		u3:([no e:SimpleWeb/Button8]) $SimpleWeb/Page4=""
+
+	    u2:([Right box e:SimpleWeb/Button6]) $SimpleWeb/Page3="Right box" Perfect ! I'll immediately put the 
+cat in the Right box 
+		u3:([yes e:SimpleWeb/Button7]) $GO=1
+		u3:([no e:SimpleWeb/Button8]) $SimpleWeb/Page4=""
+
+
+
+
+
+    u1:([bidule e:SimpleWeb/Button3]) $SimpleWeb/Page2="monkey" All right! or do you want me to put the monkey away?
+
+	    u2:([case e:SimpleWeb/Button4]) $SimpleWeb/Page3="Left box"  Perfect !  I'll immediately put the 
+monkey in the Left box 
+		u3:([yes e:SimpleWeb/Button7]) $GO=1
+		u3:([no e:SimpleWeb/Button8]) $SimpleWeb/Page4=""
+
+	    u2:([Center box e:SimpleWeb/Button5]) $SimpleWeb/Page3="Center box" Perfect ! I'll immediately put the 
+monkey in the Center box 
+		u3:([yes e:SimpleWeb/Button7]) $GO=1
+		u3:([no e:SimpleWeb/Button8]) $SimpleWeb/Page4=""
+
+	    u2:([Right box e:SimpleWeb/Button6]) $SimpleWeb/Page3="Right box"  Perfect ! I'll immediately put the 
+monkey in the Right box 
+		u3:([yes e:SimpleWeb/Button7]) $GO=1
+		u3:([no e:SimpleWeb/Button8]) $SimpleWeb/Page4=""
+

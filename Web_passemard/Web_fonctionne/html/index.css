@@ -1,0 +1,14 @@
+body
+{
+
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -1px 0 50px;
+	overflow-x: scroll;
+	
+	background: url(fond.png) no-repeat center fixed; 
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
+	text-align : center;
+	background-color : silver;
+}

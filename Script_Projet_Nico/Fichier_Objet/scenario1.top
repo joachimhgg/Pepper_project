@@ -1,0 +1,38 @@
+topic: ~simple()
+language: enu
+
+u:([Start GO Hello]) How are you ?
+
+	u1:(Fine) Do you want to hear a joke or listen music or a mime ? 
+
+ 		u2:(joke)  ^call(Jokes.print_jokes())
+			   ^sCall(ALBehaviorManager.runBehavior('untitled-d56b75/rire'))  $GO=1
+
+		u2:(music) Ok man, listen this sound from the WestCoast !  ^pCall(ALAudioPlayer.playFile('/home/nao/.local/share/PackageManager/apps/Scenario_Pepper/Mobb.mp3',0.55,-1.0)) 	
+			^pCall(ALBehaviorManager.runBehavior('untitled-d56b75/danse'))
+
+			u3:(Stop) No problem dude !  ^pCall(ALAudioPlayer.stopAll())	$GO=1
+
+
+		u2:(mime) Ok Guess which animal I have mimed ? ^call(ALBehaviorManager.runBehavior('untitled-4c8780/behavior_1')) 
+			
+			u3:([Cat Dog Cow Tiger]) No man... You loose ! $GO=1
+			
+			u3:(Elephant)  Oh yeah !!!!!! Cheers ! $GO=1
+
+	u1:([Sad Wrong]) Why ??? What happen ?
+
+
+		u2:(sick) Don't be sad. I am sur you will recover. Do you want a hug ??
+			u3:(Yes) Come here.$GO=1
+     			u3:(No) Why not ?? I am very sweet.$GO=1
+
+     		u2:(to busy) But you are well organised !  $GO=1
+
+
+	u1:(And you ?) Very good, thank you. Do you find me pretty ?  
+
+ 		u2:(Yes) Oh .... You so kind ! 	^pCall(ALBehaviorManager.runBehavior('untitled-d56b75/timide'))	 $GO=1 
+     		u2:(No) Everyone told me that... $GO=1
+
+
